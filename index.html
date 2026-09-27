@@ -14,6 +14,7 @@
 <meta property="og:image:height" content="630">
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:image" content="https://masterscaper.com/assets/og-cover.jpg">
+<link rel="canonical" href="https://masterscaper.com/">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
@@ -99,6 +100,13 @@
   footer a:hover{opacity:1;text-decoration:underline;}
   .foot-bottom{font-size:13px;opacity:0.55;padding-top:24px;border-top:1px solid rgba(237,231,217,0.15);}
 
+  .faq{padding:70px 0;border-top:1px solid rgba(16,32,26,0.12);}
+  .faq h2{font-size:26px;margin-bottom:32px;max-width:520px;}
+  .faq-item{padding:22px 0;border-bottom:1px solid rgba(16,32,26,0.12);}
+  .faq-item:first-of-type{border-top:1px solid rgba(16,32,26,0.12);}
+  .faq-item h3{font-family:'Inter',sans-serif;font-weight:600;font-size:16px;margin-bottom:8px;}
+  .faq-item p{font-size:15px;color:rgba(16,32,26,0.75);}
+
   @media (max-width:720px){
     .split{grid-template-columns:1fr;}
     nav a{margin-left:16px;font-size:13px;}
@@ -175,6 +183,32 @@
   </div>
 </section>
 
+<section class="faq">
+  <div class="wrap">
+    <h2>Common questions before you start</h2>
+    <div class="faq-item">
+      <h3>Do I need CO2 to aquascape?</h3>
+      <p>No. Low-tech tanks without pressurized CO2 can look excellent if you stick to forgiving, low-light plants — anubias, java fern, crypts, and most mosses. CO2 mainly opens up demanding carpet plants and denser stem work; it's a Stage 2 upgrade, not a requirement to start. See the <a href="/techniques/#co2-light" style="color:var(--deepwater);">CO2 & lighting basics</a>.</p>
+    </div>
+    <div class="faq-item">
+      <h3>What's the easiest aquascape style for a first tank?</h3>
+      <p>Iwagumi and basic jungle-style layouts are the most forgiving to start with, mainly because they use fewer plant species. Dutch style looks simple but actually demands the most trimming discipline of any style, so it's better attempted once you've kept a tank stable for a few months. See the full <a href="/styles/" style="color:var(--deepwater);">style breakdown</a>.</p>
+    </div>
+    <div class="faq-item">
+      <h3>How often should I trim an aquascape?</h3>
+      <p>Stem plants generally need trimming every 1–2 weeks, cut back to just above the previous trim line before they reach the surface and flop. Carpet plants get thinned as needed rather than on a fixed schedule. See the full <a href="/techniques/#maintenance" style="color:var(--deepwater);">trim & maintenance schedule</a>.</p>
+    </div>
+    <div class="faq-item">
+      <h3>What's the difference between Iwagumi and Dutch style?</h3>
+      <p>Iwagumi is built around stone — an odd number of rocks and a single carpet plant, with the hardscape as the entire visual event. Dutch has no hardscape at all; it's built entirely from rows of contrasting plants called "streets." They're close to opposites in what they ask of you.</p>
+    </div>
+    <div class="faq-item">
+      <h3>Why does my tank keep getting algae?</h3>
+      <p>Almost always because light has outpaced CO2 or nutrient supply, not because there's "too much light" on its own. Check your CO2 stability and dosing before cutting your photoperiod. See <a href="/techniques/#co2-light" style="color:var(--deepwater);">CO2 & lighting basics</a>.</p>
+    </div>
+  </div>
+</section>
+
 <footer>
   <div class="wrap">
     <div class="foot-grid">
@@ -227,6 +261,40 @@
     "https://www.petzonesd.com/#organization",
     "https://hakkai.com",
     "https://aquascapesupply.co"
+  ]
+}
+</script>
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "Do I need CO2 to aquascape?",
+      "acceptedAnswer": {"@type": "Answer", "text": "No. Low-tech tanks without pressurized CO2 can look excellent if you stick to forgiving, low-light plants — anubias, java fern, crypts, and most mosses. CO2 mainly opens up demanding carpet plants and denser stem work; it's a stage-two upgrade, not a requirement to start."}
+    },
+    {
+      "@type": "Question",
+      "name": "What's the easiest aquascape style for a first tank?",
+      "acceptedAnswer": {"@type": "Answer", "text": "Iwagumi and basic jungle-style layouts are the most forgiving to start with, mainly because they use fewer plant species. Dutch style looks simple but actually demands the most trimming discipline of any style, so it's better attempted once you've kept a tank stable for a few months."}
+    },
+    {
+      "@type": "Question",
+      "name": "How often should I trim an aquascape?",
+      "acceptedAnswer": {"@type": "Answer", "text": "Stem plants generally need trimming every 1–2 weeks, cut back to just above the previous trim line before they reach the surface and flop. Carpet plants get thinned as needed rather than on a fixed schedule."}
+    },
+    {
+      "@type": "Question",
+      "name": "What's the difference between Iwagumi and Dutch style?",
+      "acceptedAnswer": {"@type": "Answer", "text": "Iwagumi is built around stone — an odd number of rocks and a single carpet plant, with the hardscape as the entire visual event. Dutch has no hardscape at all; it's built entirely from rows of contrasting plants called streets."}
+    },
+    {
+      "@type": "Question",
+      "name": "Why does my tank keep getting algae?",
+      "acceptedAnswer": {"@type": "Answer", "text": "Almost always because light has outpaced CO2 or nutrient supply, not because there's too much light on its own. Check CO2 stability and dosing before cutting the photoperiod."}
+    }
   ]
 }
 </script>
