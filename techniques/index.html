@@ -3,6 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="icon" type="image/svg+xml" href="/assets/favicon.svg">
 <title>Aquascaping Techniques — Masterscaper</title>
 <meta name="description" content="Hardscape placement, planting order, trim schedules, and CO2/lighting basics — the technical foundation behind every aquascape style.">
 <meta property="og:title" content="Aquascaping Techniques — Masterscaper">
@@ -25,7 +26,10 @@
 <header>
   <div class="wrap">
     <a class="logo" href="/">Masterscaper</a>
-    <nav>
+    <button class="nav-toggle" aria-label="Toggle menu" aria-expanded="false" aria-controls="site-nav">
+      <span></span><span></span><span></span>
+    </button>
+    <nav id="site-nav">
       <a href="/styles/">Styles</a>
       <a href="/techniques/" class="active">Techniques</a>
       <a href="/progression/">Progression</a>
@@ -88,7 +92,7 @@
         <li><strong>Monthly:</strong> check CO2 diffuser output and clean if bubble rate has dropped — a common silent cause of stalled growth.</li>
       </ul>
     </div>
-    <div class="img-slot">[Photo: trimming shears mid-trim on a stem-plant background, or a before/after trim comparison]</div>
+    <div class="img-slot photo"><img src="https://aquascapesupply.co/cdn/shop/products/UNS_Stainless_Steel_Wave_Scissors_720x.png" alt="UNS stainless steel wave scissors used for trimming aquascape plants, Aquascape Supply" loading="lazy"></div>
   </div>
 </section>
 
@@ -104,7 +108,7 @@
       </ul>
       <div class="callout"><strong>If you're seeing algae, not better growth:</strong> the light is very likely ahead of your CO2/nutrient supply, not "too much light" on its own.</div>
     </div>
-    <div class="img-slot">[Photo: drop checker close-up showing correct green color, or CO2 diffuser with visible bubble stream]</div>
+    <div class="img-slot photo"><img src="https://aquascapesupply.co/cdn/shop/products/IMG_2897_900x_a1df66f7-cf08-4896-b755-ecd3e03dd875_720x.jpg" alt="UNS dual gauge CO2 regulator used for pressurized CO2 injection, Aquascape Supply" loading="lazy"></div>
   </div>
 </section>
 
@@ -170,5 +174,6 @@
   </div>
 </footer>
 
+<script src="/assets/nav.js" defer></script>
 </body>
 </html>

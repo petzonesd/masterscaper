@@ -3,6 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="icon" type="image/svg+xml" href="/assets/favicon.svg">
 <title>Masterscaper — Learn to Aquascape</title>
 <meta name="description" content="Master the craft of aquascaping. Style guides, hardscape technique, planting and maintenance — the field manual for building your own aquascape.">
 <meta property="og:title" content="Masterscaper — Learn to Aquascape">
@@ -44,11 +45,18 @@
   header{
     padding:20px 0;
     border-bottom:1px solid rgba(16,32,26,0.12);
+    position:relative;
   }
-  header .wrap{display:flex;justify-content:space-between;align-items:center;}
+  header .wrap{display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;}
   .logo{font-family:'Fraunces',serif;font-size:20px;font-weight:600;letter-spacing:-0.01em;}
   nav a{margin-left:28px;font-size:14px;text-decoration:none;color:var(--deepwater);}
   nav a:hover{color:var(--ink);}
+
+  .nav-toggle{display:none;flex-direction:column;justify-content:center;gap:5px;width:32px;height:32px;background:none;border:none;cursor:pointer;padding:0;}
+  .nav-toggle span{display:block;width:22px;height:2px;background:var(--ink);transition:transform .2s ease, opacity .2s ease;}
+  .nav-toggle.open span:nth-child(1){transform:translateY(7px) rotate(45deg);}
+  .nav-toggle.open span:nth-child(2){opacity:0;}
+  .nav-toggle.open span:nth-child(3){transform:translateY(-7px) rotate(-45deg);}
 
   .hero{padding:96px 0 80px;}
   .hero .eyebrow{
@@ -109,7 +117,25 @@
 
   @media (max-width:720px){
     .split{grid-template-columns:1fr;}
-    nav a{margin-left:16px;font-size:13px;}
+
+    .nav-toggle{display:flex;}
+    nav{
+      display:none;
+      order:3;
+      width:100%;
+      flex-direction:column;
+      margin-top:18px;
+      padding-top:4px;
+      border-top:1px solid rgba(16,32,26,0.1);
+    }
+    nav.open{display:flex;}
+    nav a{
+      margin-left:0;
+      font-size:16px;
+      padding:14px 2px;
+      border-bottom:1px solid rgba(16,32,26,0.08);
+    }
+    nav a:last-child{border-bottom:none;}
   }
 </style>
 </head>
@@ -118,7 +144,10 @@
 <header>
   <div class="wrap">
     <div class="logo">Masterscaper</div>
-    <nav>
+    <button class="nav-toggle" aria-label="Toggle menu" aria-expanded="false" aria-controls="site-nav">
+      <span></span><span></span><span></span>
+    </button>
+    <nav id="site-nav">
       <a href="/styles/">Styles</a>
       <a href="/techniques/">Techniques</a>
       <a href="/progression/">Progression</a>
@@ -299,5 +328,6 @@
 }
 </script>
 
+<script src="/assets/nav.js" defer></script>
 </body>
 </html>

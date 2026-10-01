@@ -3,6 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="icon" type="image/svg+xml" href="/assets/favicon.svg">
 <title>Aquascape Gallery — Masterscaper</title>
 <meta name="description" content="A curated gallery of aquascapes across every style — Iwagumi, Dutch, jungle, biotope, and paludarium — built by the Masterscaper and Hakkai community.">
 <meta property="og:title" content="Aquascape Gallery — Masterscaper">
@@ -25,7 +26,10 @@
 <header>
   <div class="wrap">
     <a class="logo" href="/">Masterscaper</a>
-    <nav>
+    <button class="nav-toggle" aria-label="Toggle menu" aria-expanded="false" aria-controls="site-nav">
+      <span></span><span></span><span></span>
+    </button>
+    <nav id="site-nav">
       <a href="/styles/">Styles</a>
       <a href="/techniques/">Techniques</a>
       <a href="/progression/">Progression</a>
@@ -47,9 +51,9 @@
   <div class="wrap">
     <h2 style="margin-bottom:20px;">Iwagumi</h2>
     <div class="grid-3">
-      <div class="card"><div class="img-slot">[Photo 1 — Iwagumi tank, likely from Hakkai gallery or a Pet Zone display tank]</div></div>
-      <div class="card"><div class="img-slot">[Photo 2 — Iwagumi, alternate angle or in-progress shot]</div></div>
-      <div class="card"><div class="img-slot">[Photo 3 — Iwagumi, mature/grown-in shot]</div></div>
+      <div class="card"><div class="img-slot photo"><img src="https://cdn.shopify.com/s/files/1/0469/0260/8028/files/iwagumi_aquascape_class_hakkai_sd_2_480x480.png" alt="Iwagumi stone arrangement from Hakkai's Iwagumi Aquascape Workshop" loading="lazy"></div></div>
+      <div class="card"><div class="img-slot photo"><img src="https://cdn.shopify.com/s/files/1/0469/0260/8028/files/IMG_5586_480x480.jpg" alt="Nano Iwagumi build in progress, Hakkai Aquascape Gallery" loading="lazy"></div></div>
+      <div class="card"><div class="img-slot photo"><img src="https://cdn.shopify.com/s/files/1/0469/0260/8028/files/IMG_5141_480x480.jpg" alt="Finished nano Iwagumi layout, Hakkai Aquascape Gallery" loading="lazy"></div></div>
     </div>
     <p style="margin-top:16px;"><a href="/styles/#iwagumi" style="color:var(--deepwater);text-decoration:underline;">Read the Iwagumi breakdown →</a></p>
   </div>
@@ -76,6 +80,30 @@
       <div class="card"><div class="img-slot photo"><img src="https://cdn.shopify.com/s/files/1/0469/0260/8028/files/dutch_aquascape_hakkai_filled_480x480.jpg" alt="Full front-glass shot of a grown-in Dutch-style tank, Hakkai aquascape build" loading="lazy"></div></div>
     </div>
     <p style="margin-top:16px;"><a href="/styles/#dutch" style="color:var(--deepwater);text-decoration:underline;">Read the Dutch breakdown →</a></p>
+  </div>
+</section>
+
+<section>
+  <div class="wrap">
+    <h2 style="margin-bottom:20px;">Biotope</h2>
+    <div class="grid-3">
+      <div class="card"><div class="img-slot photo"><img src="https://cdn.shopify.com/s/files/1/0469/0260/8028/files/biotope_aquascape_hakkai_aquascape_gallery_san_diego_1_480x480.jpg" alt="Biotope aquascape build, Hakkai Aquascape Gallery" loading="lazy"></div></div>
+      <div class="card"><div class="img-slot photo"><img src="https://cdn.shopify.com/s/files/1/0469/0260/8028/files/biotope_aquascape_hakkai_aquascape_gallery_san_diego_9_480x480.jpg" alt="Biotope-style aquascape build, Hakkai Aquascape Gallery" loading="lazy"></div></div>
+      <div class="card"><div class="img-slot photo"><img src="https://hakkai.com/cdn/shop/articles/biotope_aquascape_hakkai_aquascape_gallery_san_diego_12._480x480.jpg" alt="Biotope aquascape build showing substrate and species detail, Hakkai Aquascape Gallery" loading="lazy"></div></div>
+    </div>
+    <p style="margin-top:16px;"><a href="/styles/#biotope" style="color:var(--deepwater);text-decoration:underline;">Read the Biotope breakdown →</a></p>
+  </div>
+</section>
+
+<section>
+  <div class="wrap">
+    <h2 style="margin-bottom:20px;">Paludarium</h2>
+    <div class="grid-3">
+      <div class="card"><div class="img-slot photo"><img src="https://hakkai.com/cdn/shop/files/070D6C52-7E30-4061-B123-195C457882AE.jpg" alt="UNS 45E paludarium display, Hakkai Aquascape Gallery" loading="lazy"></div></div>
+      <div class="card"><div class="img-slot photo"><img src="https://cdn.shopify.com/s/files/1/0469/0260/8028/files/hakkai_gallery_dooa_paluda_30_system_unboxing_5_480x480.jpg" alt="DOOA Paluda 30 paludarium setup at Hakkai Aquascape Gallery" loading="lazy"></div></div>
+      <div class="card"><div class="img-slot photo"><img src="https://hakkai.com/cdn/shop/articles/dooa_paluda_30_tank_hakkai_aquascape_gallery_san_diego_480x480.jpg" alt="DOOA Paluda 30 tank, land and water sections, Hakkai Aquascape Gallery" loading="lazy"></div></div>
+    </div>
+    <p style="margin-top:16px;"><a href="/styles/#paludarium" style="color:var(--deepwater);text-decoration:underline;">Read the Paludarium breakdown →</a></p>
   </div>
 </section>
 
@@ -141,5 +169,6 @@
   </div>
 </footer>
 
+<script src="/assets/nav.js" defer></script>
 </body>
 </html>
