@@ -19,6 +19,7 @@
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:image" content="https://masterscaper.com/assets/og-gallery.jpg">
 <link rel="canonical" href="https://masterscaper.com/gallery/">
+<link rel="preload" as="image" href="https://hakkai.com/cdn/shop/files/070D6C52-7E30-4061-B123-195C457882AE.jpg?width=1920" fetchpriority="high">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
@@ -42,7 +43,11 @@
   </div>
 </header>
 
-<section class="page-hero" style="border-top:none;">
+<section class="page-hero has-photo" style="border-top:none;">
+  <div class="hero-media" aria-hidden="true">
+    <img src="https://hakkai.com/cdn/shop/files/070D6C52-7E30-4061-B123-195C457882AE.jpg?width=1920" alt="" loading="eager" fetchpriority="high" style="object-position:75% 40%;transform:scale(1.5);transform-origin:75% 40%;">
+  </div>
+  <div class="hero-overlay"></div>
   <div class="wrap">
     <div class="kicker">Gallery</div>
     <h1>Layouts worth studying, sorted by style.</h1>
