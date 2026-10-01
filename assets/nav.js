@@ -25,4 +25,12 @@ document.addEventListener('DOMContentLoaded', function () {
       toggle.focus();
     }
   });
+
+  document.addEventListener('click', function (e) {
+    if (!nav.classList.contains('open')) return;
+    if (nav.contains(e.target) || toggle.contains(e.target)) return;
+    nav.classList.remove('open');
+    toggle.classList.remove('open');
+    toggle.setAttribute('aria-expanded', 'false');
+  });
 });
