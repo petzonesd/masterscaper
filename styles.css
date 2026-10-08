@@ -35,7 +35,7 @@ nav a:hover{color:var(--ink);}
 .nav-toggle.open span:nth-child(3){transform:translateY(-7px) rotate(-45deg);}
 
 .page-hero{padding:56px 0 40px;position:relative;}
-.page-hero .kicker{font-size:14px;color:var(--moss);margin-bottom:14px;}
+.page-hero .kicker{font-size:14px;color:#46634A;margin-bottom:14px;}
 .page-hero h1{font-size:clamp(32px,5vw,48px);max-width:720px;}
 .page-hero p{max-width:600px;font-size:17px;margin-top:16px;color:rgba(16,32,26,0.75);}
 
@@ -98,7 +98,7 @@ section ol,section ul{margin-left:20px;margin-bottom:14px;}
 section li{font-size:15.5px;color:rgba(16,32,26,0.78);margin-bottom:8px;}
 
 .card{background:var(--sand);padding:26px;}
-.card .tag{font-size:13px;color:var(--driftwood);display:block;margin-bottom:8px;}
+.card .tag{font-size:13px;color:#735A38;display:block;margin-bottom:8px;}
 
 .callout{
   background:rgba(58,90,87,0.08);
@@ -130,7 +130,7 @@ footer ul{list-style:none;}
 footer li{margin-bottom:9px;}
 footer a{font-size:14px;text-decoration:none;color:var(--sand);opacity:0.9;}
 footer a:hover{opacity:1;text-decoration:underline;}
-.foot-bottom{font-size:13px;opacity:0.55;padding-top:24px;border-top:1px solid rgba(237,231,217,0.15);}
+.foot-bottom{font-size:13px;opacity:0.75;padding-top:24px;border-top:1px solid rgba(237,231,217,0.15);}
 
 @media (max-width:720px){
   .grid-2,.grid-3{grid-template-columns:1fr;}
@@ -155,3 +155,15 @@ footer a:hover{opacity:1;text-decoration:underline;}
   nav a:last-child{border-bottom:none;}
   nav a.active{border-bottom:1px solid rgba(16,32,26,0.08);}
 }
+
+.style-card h2{font-size:19px;margin-bottom:6px;}
+
+/* Accessibility */
+.skip-link{position:absolute;left:12px;top:-60px;z-index:1000;background:var(--ink);color:var(--sand);padding:10px 16px;font-size:14px;text-decoration:none;border-radius:2px;}
+.skip-link:focus{top:12px;}
+a:focus-visible,button:focus-visible{outline:3px solid #3A5A57;outline-offset:3px;border-radius:2px;}
+.hero a:focus-visible,.page-hero.has-photo a:focus-visible,footer a:focus-visible,.skip-link:focus-visible{outline-color:#EDE7D9;}
+main{display:block;}
+footer .foot-h{font-family:'Inter',sans-serif;font-size:13px;line-height:1.6;text-transform:none;color:var(--sand);opacity:0.7;margin-bottom:14px;font-weight:500;letter-spacing:0.02em;}
+nav a{padding-top:4px;padding-bottom:4px;display:inline-block;}
+@media (prefers-reduced-motion:reduce){*,*::before,*::after{transition:none !important;animation:none !important;scroll-behavior:auto !important;}}

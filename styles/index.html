@@ -26,6 +26,7 @@
 <link rel="stylesheet" href="/styles.css">
 </head>
 <body>
+<a class="skip-link" href="#main">Skip to main content</a>
 
 <header>
   <div class="wrap">
@@ -33,8 +34,8 @@
     <button class="nav-toggle" aria-label="Toggle menu" aria-expanded="false" aria-controls="site-nav">
       <span></span><span></span><span></span>
     </button>
-    <nav id="site-nav">
-      <a href="/styles/" class="active">Styles</a>
+    <nav id="site-nav" aria-label="Primary">
+      <a href="/styles/" class="active" aria-current="page">Styles</a>
       <a href="/techniques/">Techniques</a>
       <a href="/progression/">Progression</a>
       <a href="/gallery/">Gallery</a>
@@ -42,6 +43,8 @@
     </nav>
   </div>
 </header>
+
+<main id="main">
 
 <section class="page-hero has-photo" style="border-top:none;">
   <div class="hero-media" aria-hidden="true">
@@ -64,7 +67,7 @@
         <div class="img-slot photo" style="margin-bottom:14px;">
           <img src="https://hakkai.com/cdn/shop/products/image_2c749ab9-6322-4fab-ac0f-5d1c37ea0c17_1024x1024@2x.png" alt="Iwagumi Aquascape Workshop display — stone arrangement with a low carpet plant, Hakkai Aquascape Gallery" loading="lazy">
         </div>
-        <h3>Iwagumi</h3>
+        <h2>Iwagumi</h2>
         <p>Japanese "rock formation." Three to five stones (always odd), one dominant, a single carpeting plant, and almost nothing else. The hardest style to do well because there's nowhere to hide a mistake.</p>
         <a href="#iwagumi">Read the breakdown ↓</a>
       </div>
@@ -73,7 +76,7 @@
         <div class="img-slot photo" style="margin-bottom:14px;">
           <img src="https://hakkai.com/cdn/shop/products/dutchaquascapeclass_petzonesd_1024x1024@2x.png" alt="Dutch Aquascape Workshop display — dense planted color streets, Hakkai Aquascape Gallery" loading="lazy">
         </div>
-        <h3>Dutch</h3>
+        <h2>Dutch</h2>
         <p>No hardscape at all — the plants are the entire composition. Built in "streets" of contrasting color, leaf shape, and height. The oldest planted-tank style, older than the word "aquascaping" itself.</p>
         <a href="#dutch">Read the breakdown ↓</a>
       </div>
@@ -82,7 +85,7 @@
         <div class="img-slot photo" style="margin-bottom:14px;">
           <img src="https://cdn.shopify.com/s/files/1/0469/0260/8028/files/hakkai_aquascape_gallery_hakkai_stone_and_manzanita_wood_tank_480x480.jpg" alt="Jungle-style tank with Hakkai Stone and Manzanita driftwood, dense planting" loading="lazy">
         </div>
-        <h3>Jungle / Nature</h3>
+        <h2>Jungle / Nature</h2>
         <p>The Amano-inspired style most people picture when they hear "aquascape." Driftwood and stone form a skeleton; plants grow in to soften and half-obscure it, aiming for a scene that looks found, not built.</p>
         <a href="#jungle">Read the breakdown ↓</a>
       </div>
@@ -91,7 +94,7 @@
         <div class="img-slot photo" style="margin-bottom:14px;">
           <img src="https://cdn.shopify.com/s/files/1/0469/0260/8028/files/biotope_aquascape_hakkai_aquascape_gallery_san_diego_1_480x480.jpg" alt="Biotope aquascape build, Hakkai Aquascape Gallery" loading="lazy">
         </div>
-        <h3>Biotope</h3>
+        <h2>Biotope</h2>
         <p>Recreates one specific real-world habitat — down to the region, water chemistry, and species list. Less about beauty by design, more about accuracy; the beauty is a side effect of getting it right.</p>
         <a href="#biotope">Read the breakdown ↓</a>
       </div>
@@ -100,7 +103,7 @@
         <div class="img-slot photo" style="margin-bottom:14px;">
           <img src="https://hakkai.com/cdn/shop/files/070D6C52-7E30-4061-B123-195C457882AE.jpg" alt="UNS 45E paludarium display, Hakkai Aquascape Gallery" loading="lazy">
         </div>
-        <h3>Paludarium</h3>
+        <h2>Paludarium</h2>
         <p>Half aquarium, half terrarium. Land and water share the same tank, usually built around a waterfall or slope. More building project than aquascape — hardscape has to work wet and dry.</p>
         <a href="#paludarium">Read the breakdown ↓</a>
       </div>
@@ -265,11 +268,13 @@
 }
 </script>
 
+</main>
+
 <footer>
   <div class="wrap">
     <div class="foot-grid">
       <div>
-        <h4>Learn</h4>
+        <h2 class="foot-h">Learn</h2>
         <ul>
           <li><a href="/styles/">Styles</a></li>
           <li><a href="/techniques/">Techniques</a></li>
@@ -279,21 +284,21 @@
         </ul>
       </div>
       <div>
-        <h4>Design & Build</h4>
+        <h2 class="foot-h">Design & Build</h2>
         <ul>
           <li><a href="https://hakkai.com" target="_blank" rel="noopener">Hakkai — design & workshops</a></li>
           <li><a href="https://aquascapesupply.co" target="_blank" rel="noopener">Aquascape Supply — hardscape & materials</a></li>
         </ul>
       </div>
       <div>
-        <h4>Shop Local</h4>
+        <h2 class="foot-h">Shop Local</h2>
         <ul>
           <li><a href="https://petzonesd.com" target="_blank" rel="noopener">Pet Zone SD — San Diego stores</a></li>
           <li><a href="https://petzonesd.com/aquascaping-san-diego/" target="_blank" rel="noopener">Aquascaping in San Diego</a></li>
         </ul>
       </div>
       <div>
-        <h4>More Guides</h4>
+        <h2 class="foot-h">More Guides</h2>
         <ul>
           <li><a href="https://arowana.co" target="_blank" rel="noopener">Arowana.co</a></li>
           <li><a href="https://flowerhorn.co" target="_blank" rel="noopener">Flowerhorn.co</a></li>

@@ -26,6 +26,7 @@
 <link rel="stylesheet" href="/styles.css">
 </head>
 <body>
+<a class="skip-link" href="#main">Skip to main content</a>
 
 <header>
   <div class="wrap">
@@ -33,15 +34,17 @@
     <button class="nav-toggle" aria-label="Toggle menu" aria-expanded="false" aria-controls="site-nav">
       <span></span><span></span><span></span>
     </button>
-    <nav id="site-nav">
+    <nav id="site-nav" aria-label="Primary">
       <a href="/styles/">Styles</a>
       <a href="/techniques/">Techniques</a>
-      <a href="/progression/" class="active">Progression</a>
+      <a href="/progression/" class="active" aria-current="page">Progression</a>
       <a href="/gallery/">Gallery</a>
       <a href="/glossary/">Glossary</a>
     </nav>
   </div>
 </header>
+
+<main id="main">
 
 <section class="page-hero has-photo" style="border-top:none;">
   <div class="hero-media" aria-hidden="true">
@@ -226,11 +229,13 @@
 }
 </script>
 
+</main>
+
 <footer>
   <div class="wrap">
     <div class="foot-grid">
       <div>
-        <h4>Learn</h4>
+        <h2 class="foot-h">Learn</h2>
         <ul>
           <li><a href="/styles/">Styles</a></li>
           <li><a href="/techniques/">Techniques</a></li>
@@ -240,21 +245,21 @@
         </ul>
       </div>
       <div>
-        <h4>Design & Build</h4>
+        <h2 class="foot-h">Design & Build</h2>
         <ul>
           <li><a href="https://hakkai.com" target="_blank" rel="noopener">Hakkai — design & workshops</a></li>
           <li><a href="https://aquascapesupply.co" target="_blank" rel="noopener">Aquascape Supply — hardscape & materials</a></li>
         </ul>
       </div>
       <div>
-        <h4>Shop Local</h4>
+        <h2 class="foot-h">Shop Local</h2>
         <ul>
           <li><a href="https://petzonesd.com" target="_blank" rel="noopener">Pet Zone SD — San Diego stores</a></li>
           <li><a href="https://petzonesd.com/aquascaping-san-diego/" target="_blank" rel="noopener">Aquascaping in San Diego</a></li>
         </ul>
       </div>
       <div>
-        <h4>More Guides</h4>
+        <h2 class="foot-h">More Guides</h2>
         <ul>
           <li><a href="https://arowana.co" target="_blank" rel="noopener">Arowana.co</a></li>
           <li><a href="https://flowerhorn.co" target="_blank" rel="noopener">Flowerhorn.co</a></li>
