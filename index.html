@@ -7,7 +7,7 @@
 <link rel="icon" type="image/svg+xml" href="/assets/favicon.svg">
 <link rel="icon" type="image/png" sizes="32x32" href="/assets/favicon-32.png">
 <link rel="apple-touch-icon" href="/assets/apple-touch-icon.png">
-<meta name="theme-color" content="#10201A">
+<meta name="theme-color" content="#2f3a3a">
 <title>Masterscaper — Learn to Aquascape</title>
 <meta name="description" content="Master the craft of aquascaping. Style guides, hardscape technique, planting and maintenance — the field manual for building your own aquascape.">
 <meta property="og:title" content="Masterscaper — Learn to Aquascape">
@@ -20,161 +20,10 @@
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:image" content="https://masterscaper.com/assets/og-cover.jpg">
 <link rel="canonical" href="https://masterscaper.com/">
-<link rel="preload" as="image" href="https://hakkai.com/cdn/shop/files/070D6C52-7E30-4061-B123-195C457882AE.jpg?width=1920" fetchpriority="high">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
-<style>
-  :root{
-    --ink:#10201A;
-    --sand:#EDE7D9;
-    --moss:#5C7A5E;
-    --driftwood:#8B6F47;
-    --deepwater:#3A5A57;
-  }
-  *{box-sizing:border-box;margin:0;padding:0;}
-  body{
-    background:var(--sand);
-    color:var(--ink);
-    font-family:'Inter',sans-serif;
-    line-height:1.6;
-  }
-  h1,h2,h3,.display{
-    font-family:'Fraunces',serif;
-    font-weight:500;
-    line-height:1.1;
-  }
-  a{color:inherit;}
-  .wrap{max-width:1080px;margin:0 auto;padding:0 24px;}
-
-  header{
-    padding:20px 0;
-    border-bottom:1px solid rgba(16,32,26,0.12);
-    position:relative;
-  }
-  header .wrap{display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;}
-  .logo{font-family:'Fraunces',serif;font-size:20px;font-weight:600;letter-spacing:-0.01em;}
-  nav a{margin-left:28px;font-size:14px;text-decoration:none;color:var(--deepwater);}
-  nav a:hover{color:var(--ink);}
-
-  .nav-toggle{display:none;flex-direction:column;justify-content:center;gap:5px;width:32px;height:32px;background:none;border:none;cursor:pointer;padding:0;}
-  .nav-toggle span{display:block;width:22px;height:2px;background:var(--ink);transition:transform .2s ease, opacity .2s ease;}
-  .nav-toggle.open span:nth-child(1){transform:translateY(7px) rotate(45deg);}
-  .nav-toggle.open span:nth-child(2){opacity:0;}
-  .nav-toggle.open span:nth-child(3){transform:translateY(-7px) rotate(-45deg);}
-
-  .hero{
-    padding:130px 0 100px;
-    position:relative;
-    overflow:hidden;
-  }
-  .hero-media{
-    position:absolute;inset:0;overflow:hidden;z-index:0;
-  }
-  .hero-media img{
-    position:absolute;inset:0;width:100%;height:100%;
-    object-fit:cover;object-position:45% 42%;
-    transform:scale(1.5);transform-origin:45% 42%;
-  }
-  .hero-overlay{
-    position:absolute;inset:0;z-index:1;
-    background:linear-gradient(115deg, rgba(16,32,26,0.94) 0%, rgba(16,32,26,0.82) 38%, rgba(16,32,26,0.58) 100%);
-  }
-  .hero .wrap{position:relative;z-index:2;}
-  .hero .eyebrow{
-    font-size:14px;color:#A9C9A6;margin-bottom:18px;max-width:520px;letter-spacing:0.02em;
-  }
-  .hero h1{
-    font-size:clamp(38px,6vw,64px);
-    max-width:820px;
-    color:var(--sand);
-  }
-  .hero h1 em{font-style:italic;color:#CFE8C9;}
-  .hero p{
-    max-width:560px;
-    font-size:18px;
-    margin-top:22px;
-    color:rgba(237,231,217,0.88);
-  }
-  .hero .actions{margin-top:32px;display:flex;gap:16px;flex-wrap:wrap;}
-  .btn{
-    display:inline-block;padding:13px 26px;font-size:15px;
-    text-decoration:none;border-radius:2px;
-  }
-  .hero .btn-primary{background:var(--sand);color:var(--ink);}
-  .hero .btn-secondary{border:1px solid var(--sand);color:var(--sand);}
-  .btn-primary{background:var(--ink);color:var(--sand);}
-  .btn-secondary{border:1px solid var(--ink);color:var(--ink);}
-  @media (max-width:720px){
-    .hero{padding:100px 0 72px;}
-  }
-
-  .tracks{padding:60px 0 80px;border-top:1px solid rgba(16,32,26,0.12);}
-  .tracks h2{font-size:28px;margin-bottom:36px;max-width:520px;}
-  .track-list{display:grid;grid-template-columns:repeat(auto-fit,minmax(230px,1fr));gap:1px;background:rgba(16,32,26,0.12);border:1px solid rgba(16,32,26,0.12);}
-  .track{background:var(--sand);padding:28px 24px;}
-  .track .num{font-size:13px;color:#735A38;display:block;margin-bottom:10px;}
-  .track h3{font-size:19px;margin-bottom:8px;}
-  .track p{font-size:14px;color:rgba(16,32,26,0.7);}
-
-  .split{
-    display:grid;grid-template-columns:1fr 1fr;gap:48px;
-    padding:70px 0;border-top:1px solid rgba(16,32,26,0.12);
-    align-items:start;
-  }
-  .split h2{font-size:26px;margin-bottom:14px;}
-  .split p{font-size:15px;color:rgba(16,32,26,0.75);margin-bottom:14px;}
-  .split a.linkout{font-size:15px;font-weight:500;color:var(--deepwater);text-decoration:underline;text-underline-offset:3px;}
-
-  footer{border-top:1px solid rgba(16,32,26,0.15);background:var(--ink);color:var(--sand);padding:50px 0 30px;margin-top:40px;}
-  footer .foot-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(180px,1fr));gap:32px;margin-bottom:40px;}
-  footer h4{font-size:13px;text-transform:none;color:var(--sand);opacity:0.7;margin-bottom:14px;font-weight:500;letter-spacing:0.02em;}
-  footer ul{list-style:none;}
-  footer li{margin-bottom:9px;}
-  footer a{font-size:14px;text-decoration:none;color:var(--sand);opacity:0.9;}
-  footer a:hover{opacity:1;text-decoration:underline;}
-  .foot-bottom{font-size:13px;opacity:0.75;padding-top:24px;border-top:1px solid rgba(237,231,217,0.15);}
-
-  .faq{padding:70px 0;border-top:1px solid rgba(16,32,26,0.12);}
-  .faq h2{font-size:26px;margin-bottom:32px;max-width:520px;}
-  .faq-item{padding:22px 0;border-bottom:1px solid rgba(16,32,26,0.12);}
-  .faq-item:first-of-type{border-top:1px solid rgba(16,32,26,0.12);}
-  .faq-item h3{font-family:'Inter',sans-serif;font-weight:600;font-size:16px;margin-bottom:8px;}
-  .faq-item p{font-size:15px;color:rgba(16,32,26,0.75);}
-
-  @media (max-width:720px){
-    .split{grid-template-columns:1fr;}
-
-    .nav-toggle{display:flex;}
-    nav{
-      display:none;
-      order:3;
-      width:100%;
-      flex-direction:column;
-      margin-top:18px;
-      padding-top:4px;
-      border-top:1px solid rgba(16,32,26,0.1);
-    }
-    nav.open{display:flex;}
-    nav a{
-      margin-left:0;
-      font-size:16px;
-      padding:14px 2px;
-      border-bottom:1px solid rgba(16,32,26,0.08);
-    }
-    nav a:last-child{border-bottom:none;}
-  }
-
-/* Accessibility */
-.skip-link{position:absolute;left:12px;top:-60px;z-index:1000;background:var(--ink);color:var(--sand);padding:10px 16px;font-size:14px;text-decoration:none;border-radius:2px;}
-.skip-link:focus{top:12px;}
-a:focus-visible,button:focus-visible{outline:3px solid #3A5A57;outline-offset:3px;border-radius:2px;}
-.hero a:focus-visible,.page-hero.has-photo a:focus-visible,footer a:focus-visible,.skip-link:focus-visible{outline-color:#EDE7D9;}
-main{display:block;}
-footer .foot-h{font-family:'Inter',sans-serif;font-size:13px;line-height:1.6;text-transform:none;color:var(--sand);opacity:0.7;margin-bottom:14px;font-weight:500;letter-spacing:0.02em;}
-nav a{padding-top:4px;padding-bottom:4px;display:inline-block;}
-@media (prefers-reduced-motion:reduce){*,*::before,*::after{transition:none !important;animation:none !important;scroll-behavior:auto !important;}}
-</style>
+<link href="https://fonts.googleapis.com/css2?family=Epilogue:wght@500;600;800&family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,600;1,6..72,400&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="/styles.css">
 </head>
 <body>
 <a class="skip-link" href="#main">Skip to main content</a>
@@ -198,20 +47,108 @@ nav a{padding-top:4px;padding-bottom:4px;display:inline-block;}
 <main id="main">
 
 <section class="hero">
-  <div class="hero-media" aria-hidden="true">
-    <img src="https://hakkai.com/cdn/shop/files/070D6C52-7E30-4061-B123-195C457882AE.jpg?width=1920" alt="" loading="eager" fetchpriority="high">
-  </div>
-  <div class="hero-overlay"></div>
   <div class="wrap">
-    <div class="eyebrow">A field manual for aquascaping</div>
-    <h1>Anyone can put a rock<br>in a tank. <em>Few place it</em><br>on purpose.</h1>
-    <p>Masterscaper is where you learn the technique behind the layouts you admire — hardscape placement, planting order, trim schedules, and the style traditions that shape them.</p>
-    <div class="actions">
-      <a href="/techniques/" class="btn btn-primary">Start with technique</a>
-      <a href="/styles/" class="btn btn-secondary">Browse styles</a>
+    <div>
+      <div class="eyebrow">A field manual for aquascaping</div>
+      <h1>Anyone can put a rock in a tank. <em>Few place it</em> on purpose.</h1>
+      <p>Masterscaper is where you learn the technique behind the layouts you admire — hardscape placement, planting order, trim schedules, and the style traditions that shape them.</p>
+      <div class="actions">
+        <a href="/techniques/" class="btn btn-primary">Start with technique</a>
+        <a href="/styles/" class="btn btn-secondary">Browse styles</a>
+      </div>
     </div>
+    <figure class="sheet">
+<svg class="fig-d" viewBox="0 0 760 470" role="img" aria-label="Front elevation of an iwagumi tank. Three stones form a scalene triangle: the large oyaishi stands at the golden section, about 38 percent of the tank width from the left, a mid-sized fukuishi sits on the longer side, and a small soeishi tucks against the oyaishi on the shorter side." xmlns="http://www.w3.org/2000/svg">
+<defs><pattern id="gd" width="20" height="20" patternUnits="userSpaceOnUse"><path d="M20 0H0V20" fill="none" stroke="#2f3a3a" stroke-opacity=".08"/></pattern><pattern id="hd" width="8" height="8" patternUnits="userSpaceOnUse" patternTransform="rotate(35)"><path d="M0 0V8" stroke="#2f3a3a" stroke-opacity=".35" stroke-width="1.2"/></pattern><marker id="ad" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="8" markerHeight="8" orient="auto-start-reverse"><path d="M0 1 10 5 0 9Z" fill="#2f3a3a"/></marker></defs>
+<rect width="760" height="470" fill="url(#gd)"/>
+<rect x="40" y="70" width="680" height="300" fill="#fff" fill-opacity=".55" stroke="#2f3a3a" stroke-width="2.5"/>
+<rect x="40" y="335" width="680" height="35" fill="url(#hd)"/>
+<line x1="40" y1="335" x2="720" y2="335" stroke="#2f3a3a" stroke-width="1.5"/>
+<polygon points="40.0,326 47.0,331 54.0,328 61.0,329 68.0,328 75.1,331 82.1,326 89.1,331 96.1,328 103.1,329 110.1,328 117.1,331 124.1,326 131.1,331 138.1,328 145.2,329 152.2,328 159.2,331 166.2,326 173.2,331 180.2,328 187.2,329 194.2,328 201.2,331 208.2,326 215.3,331 222.3,328 229.3,329 236.3,328 243.3,331 250.3,326 257.3,331 264.3,328 271.3,329 278.4,328 285.4,331 292.4,326 299.4,331 306.4,328 313.4,329 320.4,328 327.4,331 334.4,326 341.4,331 348.5,328 355.5,329 362.5,328 369.5,331 376.5,326 383.5,331 390.5,328 397.5,329 404.5,328 411.5,331 418.6,326 425.6,331 432.6,328 439.6,329 446.6,328 453.6,331 460.6,326 467.6,331 474.6,328 481.6,329 488.7,328 495.7,331 502.7,326 509.7,331 516.7,328 523.7,329 530.7,328 537.7,331 544.7,326 551.8,331 558.8,328 565.8,329 572.8,328 579.8,331 586.8,326 593.8,331 600.8,328 607.8,329 614.8,328 621.9,331 628.9,326 635.9,331 642.9,328 649.9,329 656.9,328 663.9,331 670.9,326 677.9,331 684.9,328 692.0,329 699.0,328 706.0,331 713.0,326 720.0,331 720,335 40,335" fill="#c6d86a" stroke="#475f1f" stroke-width="1.2" stroke-linejoin="round"/>
+<g class="tri"><polygon points="300,112 508,205 178,282" fill="#c6d86a" fill-opacity=".28" stroke="#2f3a3a" stroke-width="1.8" stroke-dasharray="9 6" stroke-linejoin="round"/>
+<circle cx="300" cy="112" r="4.5" fill="#2f3a3a"/>
+<circle cx="508" cy="205" r="4.5" fill="#2f3a3a"/>
+<circle cx="178" cy="282" r="4.5" fill="#2f3a3a"/>
+</g>
+<polygon points="150,335 158,304 178,282 198,298 208,335" fill="#c3cac8" stroke="#2f3a3a" stroke-width="2.5" stroke-linejoin="round"/>
+<polygon points="435,335 452,262 480,222 508,205 540,240 565,335" fill="#c3cac8" stroke="#2f3a3a" stroke-width="2.5" stroke-linejoin="round"/>
+<polygon points="215,335 238,225 270,150 300,112 332,140 372,205 395,335" fill="#c3cac8" stroke="#2f3a3a" stroke-width="2.5" stroke-linejoin="round"/>
+<polygon points="300,112 332,140 372,205 395,335 300,335" fill="#2f3a3a" fill-opacity=".16"/>
+<polygon points="215,335 238,225 270,150 300,112 300,335" fill="#fff" fill-opacity=".35"/>
+<polygon points="508,205 540,240 565,335 500,335" fill="#2f3a3a" fill-opacity=".16"/>
+<polygon points="178,282 198,298 208,335 180,335" fill="#2f3a3a" fill-opacity=".16"/>
+<polyline points="300,112 300,200 286,335" fill="none" stroke="#2f3a3a" stroke-width="1.2" stroke-opacity=".6"/>
+<polyline points="508,205 500,270 500,335" fill="none" stroke="#2f3a3a" stroke-width="1.2" stroke-opacity=".6"/>
+<line class="plumb" x1="300" y1="112" x2="300" y2="420" stroke="#d6402b" stroke-width="2.4"/>
+<line x1="40" y1="412" x2="300" y2="412" stroke="#2f3a3a" stroke-width="1.6" marker-start="url(#ad)" marker-end="url(#ad)"/>
+<line x1="40" y1="404" x2="40" y2="420" stroke="#2f3a3a" stroke-width="1.6"/>
+<line x1="300" y1="404" x2="300" y2="420" stroke="#2f3a3a" stroke-width="1.6"/>
+<text class="dm" x="170.0" y="403" text-anchor="middle">0.382</text>
+<line x1="300" y1="412" x2="720" y2="412" stroke="#2f3a3a" stroke-width="1.6" marker-start="url(#ad)" marker-end="url(#ad)"/>
+<line x1="300" y1="404" x2="300" y2="420" stroke="#2f3a3a" stroke-width="1.6"/>
+<line x1="720" y1="404" x2="720" y2="420" stroke="#2f3a3a" stroke-width="1.6"/>
+<text class="dm" x="510.0" y="403" text-anchor="middle">0.618</text>
+<line x1="40" y1="448" x2="720" y2="448" stroke="#2f3a3a" stroke-width="1.6" marker-start="url(#ad)" marker-end="url(#ad)"/>
+<line x1="40" y1="440" x2="40" y2="456" stroke="#2f3a3a" stroke-width="1.6"/>
+<line x1="720" y1="440" x2="720" y2="456" stroke="#2f3a3a" stroke-width="1.6"/>
+<text class="dm" x="380.0" y="439" text-anchor="middle">tank width</text>
+<polyline points="384,176 420,136 446,136" fill="none" stroke="#2f3a3a" stroke-width="1.6"/><circle cx="446" cy="136" r="3" fill="#2f3a3a"/><text class="nm" x="454" y="132" text-anchor="start">Oyaishi</text><text class="ds" x="454" y="151" text-anchor="start">main stone</text>
+<polyline points="530,232 560,196 576,196" fill="none" stroke="#2f3a3a" stroke-width="1.6"/><circle cx="576" cy="196" r="3" fill="#2f3a3a"/><text class="nm" x="584" y="192" text-anchor="start">Fukuishi</text><text class="ds" x="584" y="211" text-anchor="start">secondary stone</text>
+<polyline points="168,300 120,262 100,262" fill="none" stroke="#2f3a3a" stroke-width="1.6"/><circle cx="100" cy="262" r="3" fill="#2f3a3a"/><text class="nm" x="92" y="258" text-anchor="end">Soeishi</text><text class="ds" x="92" y="277" text-anchor="end">tertiary stone</text>
+</svg>
+<svg class="fig-m" viewBox="0 0 400 330" role="img" aria-label="Front elevation of an iwagumi tank. Three stones form a scalene triangle: the large oyaishi stands at the golden section, about 38 percent of the tank width from the left, a mid-sized fukuishi sits on the longer side, and a small soeishi tucks against the oyaishi on the shorter side." xmlns="http://www.w3.org/2000/svg">
+<defs><pattern id="gm" width="20" height="20" patternUnits="userSpaceOnUse"><path d="M20 0H0V20" fill="none" stroke="#2f3a3a" stroke-opacity=".08"/></pattern><pattern id="hm" width="8" height="8" patternUnits="userSpaceOnUse" patternTransform="rotate(35)"><path d="M0 0V8" stroke="#2f3a3a" stroke-opacity=".35" stroke-width="1.2"/></pattern><marker id="am" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="8" markerHeight="8" orient="auto-start-reverse"><path d="M0 1 10 5 0 9Z" fill="#2f3a3a"/></marker></defs>
+<rect width="400" height="330" fill="url(#gm)"/>
+<rect x="14.0" y="36.0" width="340.0" height="186.0" fill="#fff" fill-opacity=".55" stroke="#2f3a3a" stroke-width="2.5"/>
+<rect x="14.0" y="200.3" width="340.0" height="21.7" fill="url(#hm)"/>
+<line x1="14.0" y1="200.3" x2="354.0" y2="200.3" stroke="#2f3a3a" stroke-width="1.5"/>
+<polygon points="14.0,192.7 20.1,197.1 26.1,194.7 32.2,195.1 38.3,194.7 44.4,197.1 50.4,192.7 56.5,197.1 62.6,194.7 68.6,195.1 74.7,194.7 80.8,197.1 86.9,192.7 92.9,197.1 99.0,194.7 105.1,195.1 111.1,194.7 117.2,197.1 123.3,192.7 129.4,197.1 135.4,194.7 141.5,195.1 147.6,194.7 153.6,197.1 159.7,192.7 165.8,197.1 171.9,194.7 177.9,195.1 184.0,194.7 190.1,197.1 196.1,192.7 202.2,197.1 208.3,194.7 214.4,195.1 220.4,194.7 226.5,197.1 232.6,192.7 238.6,197.1 244.7,194.7 250.8,195.1 256.9,194.7 262.9,197.1 269.0,192.7 275.1,197.1 281.1,194.7 287.2,195.1 293.3,194.7 299.4,197.1 305.4,192.7 311.5,197.1 317.6,194.7 323.6,195.1 329.7,194.7 335.8,197.1 341.9,192.7 347.9,197.1 354.0,194.7 354.0,200.3 14.0,200.3" fill="#c6d86a" stroke="#475f1f" stroke-width="1.2" stroke-linejoin="round"/>
+<g class="tri"><polygon points="144.0,62.0 248.0,119.7 83.0,167.4" fill="#c6d86a" fill-opacity=".28" stroke="#2f3a3a" stroke-width="1.8" stroke-dasharray="9 6" stroke-linejoin="round"/>
+<circle cx="144.0" cy="62.0" r="4.5" fill="#2f3a3a"/>
+<circle cx="248.0" cy="119.7" r="4.5" fill="#2f3a3a"/>
+<circle cx="83.0" cy="167.4" r="4.5" fill="#2f3a3a"/>
+</g>
+<polygon points="69.0,200.3 73.0,181.1 83.0,167.4 93.0,177.4 98.0,200.3" fill="#c3cac8" stroke="#2f3a3a" stroke-width="2.5" stroke-linejoin="round"/>
+<polygon points="211.5,200.3 220.0,155.0 234.0,130.2 248.0,119.7 264.0,141.4 276.5,200.3" fill="#c3cac8" stroke="#2f3a3a" stroke-width="2.5" stroke-linejoin="round"/>
+<polygon points="101.5,200.3 113.0,132.1 129.0,85.6 144.0,62.0 160.0,79.4 180.0,119.7 191.5,200.3" fill="#c3cac8" stroke="#2f3a3a" stroke-width="2.5" stroke-linejoin="round"/>
+<polygon points="144.0,62.0 160.0,79.4 180.0,119.7 191.5,200.3 144.0,200.3" fill="#2f3a3a" fill-opacity=".16"/>
+<polygon points="101.5,200.3 113.0,132.1 129.0,85.6 144.0,62.0 144.0,200.3" fill="#fff" fill-opacity=".35"/>
+<polygon points="248.0,119.7 264.0,141.4 276.5,200.3 244.0,200.3" fill="#2f3a3a" fill-opacity=".16"/>
+<polygon points="83.0,167.4 93.0,177.4 98.0,200.3 84.0,200.3" fill="#2f3a3a" fill-opacity=".16"/>
+<polyline points="144.0,62.0 144.0,116.6 137.0,200.3" fill="none" stroke="#2f3a3a" stroke-width="1.2" stroke-opacity=".6"/>
+<polyline points="248.0,119.7 244.0,160.0 244.0,200.3" fill="none" stroke="#2f3a3a" stroke-width="1.2" stroke-opacity=".6"/>
+<line class="plumb" x1="144.0" y1="62.0" x2="144.0" y2="270" stroke="#d6402b" stroke-width="2.4"/>
+<line x1="14.0" y1="262" x2="144.0" y2="262" stroke="#2f3a3a" stroke-width="1.6" marker-start="url(#am)" marker-end="url(#am)"/>
+<line x1="14.0" y1="254" x2="14.0" y2="270" stroke="#2f3a3a" stroke-width="1.6"/>
+<line x1="144.0" y1="254" x2="144.0" y2="270" stroke="#2f3a3a" stroke-width="1.6"/>
+<text class="dm" x="79.0" y="253" text-anchor="middle">0.382</text>
+<line x1="144.0" y1="262" x2="354.0" y2="262" stroke="#2f3a3a" stroke-width="1.6" marker-start="url(#am)" marker-end="url(#am)"/>
+<line x1="144.0" y1="254" x2="144.0" y2="270" stroke="#2f3a3a" stroke-width="1.6"/>
+<line x1="354.0" y1="254" x2="354.0" y2="270" stroke="#2f3a3a" stroke-width="1.6"/>
+<text class="dm" x="249.0" y="253" text-anchor="middle">0.618</text>
+<line x1="14.0" y1="302" x2="354.0" y2="302" stroke="#2f3a3a" stroke-width="1.6" marker-start="url(#am)" marker-end="url(#am)"/>
+<line x1="14.0" y1="294" x2="14.0" y2="310" stroke="#2f3a3a" stroke-width="1.6"/>
+<line x1="354.0" y1="294" x2="354.0" y2="310" stroke="#2f3a3a" stroke-width="1.6"/>
+<text class="dm" x="184.0" y="293" text-anchor="middle">tank width</text>
+<polyline points="160.0,85.6 192.0,51.400000000000006 200.0,51.400000000000006" fill="none" stroke="#2f3a3a" stroke-width="1.6"/><circle cx="200.0" cy="51.400000000000006" r="3" fill="#2f3a3a"/><text class="nm" x="206.0" y="56.400000000000006" text-anchor="start">Oyaishi</text>
+<polyline points="254.0,125.9 258.0,101.9" fill="none" stroke="#2f3a3a" stroke-width="1.6"/><circle cx="258.0" cy="101.9" r="3" fill="#2f3a3a"/><text class="nm" x="220.0" y="95.9" text-anchor="start">Fukuishi</text>
+<polyline points="76.0,173.6 50.0,141.6" fill="none" stroke="#2f3a3a" stroke-width="1.6"/><circle cx="50.0" cy="141.6" r="3" fill="#2f3a3a"/><text class="nm" x="10" y="135.6" text-anchor="start">Soeishi</text>
+</svg>
+<figcaption>
+<div><b>Oyaishi</b>The main stone: largest, set off-center on the golden section, and it sets the angle the others answer.</div>
+<div><b>Fukuishi</b>The secondary stone: smaller, placed on the longer side so the three tops make an unequal triangle.</div>
+<div><b>Soeishi</b>The tertiary stone: smallest, tucked in beside the oyaishi to carry the line down to the substrate.</div>
+</figcaption>
+</figure>
   </div>
 </section>
+
+<div class="plate-band">
+  <div class="wrap">
+    <div class="img-slot photo"><img src="https://hakkai.com/cdn/shop/files/070D6C52-7E30-4061-B123-195C457882AE.jpg?width=1920" alt="" loading="lazy" width="1920" height="730"></div>
+  </div>
+</div>
+
 
 <section class="tracks">
   <div class="wrap">
@@ -242,16 +179,16 @@ nav a{padding-top:4px;padding-bottom:4px;display:inline-block;}
 </section>
 
 <section class="split">
-  <div class="wrap" style="display:contents;">
+  <div class="wrap">
     <div>
       <h2>Want to build it yourself?</h2>
       <p>Everything here is written to get your hands in the tank — style breakdowns, step-by-step technique, and a glossary for when a term stops you cold.</p>
-      <a class="linkout" href="/techniques/">Start the technique guides →</a>
+      <a class="linkout" href="/techniques/">Start the technique guides</a>
     </div>
     <div>
       <h2>Want it designed for you — or hands-on instruction?</h2>
       <p>Hakkai designs and installs custom aquascapes out of San Diego, and runs in-person workshops if you'd rather learn by scaping alongside a designer.</p>
-      <a class="linkout" href="https://hakkai.com" target="_blank" rel="noopener">Visit Hakkai →</a>
+      <a class="linkout" href="https://hakkai.com" target="_blank" rel="noopener">Visit Hakkai</a>
     </div>
   </div>
 </section>
@@ -261,15 +198,15 @@ nav a{padding-top:4px;padding-bottom:4px;display:inline-block;}
     <h2>Common questions before you start</h2>
     <div class="faq-item">
       <h3>Do I need CO2 to aquascape?</h3>
-      <p>No. Low-tech tanks without pressurized CO2 can look excellent if you stick to forgiving, low-light plants — anubias, java fern, crypts, and most mosses. CO2 mainly opens up demanding carpet plants and denser stem work; it's a Stage 2 upgrade, not a requirement to start. See the <a href="/techniques/#co2-light" style="color:var(--deepwater);">CO2 & lighting basics</a>.</p>
+      <p>No. Low-tech tanks without pressurized CO2 can look excellent if you stick to forgiving, low-light plants — anubias, java fern, crypts, and most mosses. CO2 mainly opens up demanding carpet plants and denser stem work; it's a Stage 2 upgrade, not a requirement to start. See the <a href="/techniques/#co2-light">CO2 & lighting basics</a>.</p>
     </div>
     <div class="faq-item">
       <h3>What's the easiest aquascape style for a first tank?</h3>
-      <p>Iwagumi and basic jungle-style layouts are the most forgiving to start with, mainly because they use fewer plant species. Dutch style looks simple but actually demands the most trimming discipline of any style, so it's better attempted once you've kept a tank stable for a few months. See the full <a href="/styles/" style="color:var(--deepwater);">style breakdown</a>.</p>
+      <p>Iwagumi and basic jungle-style layouts are the most forgiving to start with, mainly because they use fewer plant species. Dutch style looks simple but actually demands the most trimming discipline of any style, so it's better attempted once you've kept a tank stable for a few months. See the full <a href="/styles/">style breakdown</a>.</p>
     </div>
     <div class="faq-item">
       <h3>How often should I trim an aquascape?</h3>
-      <p>Stem plants generally need trimming every 1–2 weeks, cut back to just above the previous trim line before they reach the surface and flop. Carpet plants get thinned as needed rather than on a fixed schedule. See the full <a href="/techniques/#maintenance" style="color:var(--deepwater);">trim & maintenance schedule</a>.</p>
+      <p>Stem plants generally need trimming every 1–2 weeks, cut back to just above the previous trim line before they reach the surface and flop. Carpet plants get thinned as needed rather than on a fixed schedule. See the full <a href="/techniques/#maintenance">trim & maintenance schedule</a>.</p>
     </div>
     <div class="faq-item">
       <h3>What's the difference between Iwagumi and Dutch style?</h3>
@@ -277,7 +214,7 @@ nav a{padding-top:4px;padding-bottom:4px;display:inline-block;}
     </div>
     <div class="faq-item">
       <h3>Why does my tank keep getting algae?</h3>
-      <p>Almost always because light has outpaced CO2 or nutrient supply, not because there's "too much light" on its own. Check your CO2 stability and dosing before cutting your photoperiod. See <a href="/techniques/#co2-light" style="color:var(--deepwater);">CO2 & lighting basics</a>.</p>
+      <p>Almost always because light has outpaced CO2 or nutrient supply, not because there's "too much light" on its own. Check your CO2 stability and dosing before cutting your photoperiod. See <a href="/techniques/#co2-light">CO2 & lighting basics</a>.</p>
     </div>
   </div>
 </section>
@@ -327,7 +264,7 @@ nav a{padding-top:4px;padding-bottom:4px;display:inline-block;}
         </ul>
       </div>
     </div>
-    <div class="foot-bottom">© 2026 Masterscaper. Part of the Pet Zone SD family of aquarium resources. · <a href="/about/" style="text-decoration:underline;">About</a></div>
+    <div class="foot-bottom">© 2026 Masterscaper. Part of the Pet Zone SD family of aquarium resources.<a href="/about/">About</a></div>
   </div>
 </footer>
 
