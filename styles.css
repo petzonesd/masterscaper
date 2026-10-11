@@ -139,6 +139,10 @@ section:not(.hero):not(.page-hero):nth-of-type(odd) > .grid-2{grid-template-colu
     linear-gradient(var(--c),var(--c)) 100% 100%/2px 16px;
   background-repeat:no-repeat;
 }
+.card .cap{
+  font-family:var(--display);font-size:13px;line-height:1.4;
+  color:var(--muted);text-align:center;margin:6px 10px 0;
+}
 
 .callout{
   background:rgba(198,216,106,.3);
