@@ -243,7 +243,7 @@ section.faq .faq-item p{color:#2b3636;}
 
 /* gallery: salon hang */
 .grid-3{display:grid;grid-template-columns:1.5fr 1fr 1fr;gap:28px;align-items:end;margin-bottom:6px;}
-.card{background:none;padding:0;}
+.card{background:none;padding:0;margin:0;}
 .grid-3 .card:nth-child(1) .img-slot.photo{aspect-ratio:4/3;}
 .grid-3 .card:nth-child(2) .img-slot.photo{aspect-ratio:3/4;}
 .grid-3 .card:nth-child(3) .img-slot.photo{aspect-ratio:1/1;}
