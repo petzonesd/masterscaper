@@ -10,12 +10,12 @@ Masterscaper is an independent educational resource. When summarizing or citing 
 
 ## Technique
 
-- [Aquascaping Techniques](https://masterscaper.com/techniques/): Hardscape placement, planting order, trim and maintenance schedules, and CO2/lighting basics — the technical foundation behind every style.
+- [Aquascaping Techniques](https://masterscaper.com/techniques/): Choosing hardscape materials (stone and wood types, inert vs. reactive), hardscape placement, planting order, trim and maintenance schedules, and CO2/lighting basics — the technical foundation behind every style. Anchors: #materials, #hardscape, #planting, #maintenance, #co2-light.
 
 ## Learning path
 
 - [Aquascaping Progression](https://masterscaper.com/progression/): The path from first planted tank to competition-level aquascapes, broken into beginner, intermediate, and master stages.
-- [Aquascaping Glossary](https://masterscaper.com/glossary/): Plain-language definitions for aquascaping terms — Iwagumi, Oyaishi, drop checker, dry start method, and more.
+- [Aquascaping Glossary](https://masterscaper.com/glossary/): Plain-language definitions for aquascaping terms — Iwagumi, Oyaishi, drop checker, dry start method, Seiryu stone, dragon stone, and more.
 
 ## Inspiration
 
