@@ -1,55 +1,51 @@
-# Masterscaper — launch checklist
+# Masterscaper
 
-## 1. Publish (matches flowerhornhobby.com / freshwaterguides.com)
-- Create repo `petzonesd/masterscaper` (public) on GitHub Pages
-- Push `index.html` as-is (fonts load from Google Fonts CDN, no build step)
-- Point masterscaper.com DNS at GitHub Pages (same as the other two — DNS is at GoDaddy)
-- This session has no GitHub auth, so the push itself needs to happen from a
-  session with the petzonesd GitHub account (Claude Code / Cowork), or by hand
+Masterscaper.com is a live, static GitHub Pages site (served from `main`, root,
+via the `CNAME` file) — the aquascaping technique and style "field manual" for
+Pet Zone Tropical Fish / Hakkai (San Diego). No build step: plain HTML/CSS/JS,
+fonts from Google Fonts CDN.
 
-## 2. Reciprocal edits on the other sites (agreed plan)
+## Site structure
 
-**petzonesd.com `/aquascaping/` category (BigCommerce)**
-Add below the existing Hakkai link:
-> Want to learn the techniques yourself? Visit **Masterscaper** for style guides,
-> hardscape placement, and planting technique.
-> Link: https://masterscaper.com
+- `/` — homepage
+- `/styles/` — Iwagumi, Dutch, jungle/nature, biotope, paludarium
+- `/techniques/` — hardscape materials & placement, planting order, trim
+  schedule, CO2/lighting & nutrients
+- `/progression/` — beginner → intermediate → master stages
+- `/gallery/` — curated layouts by style, cross-linked to the style pages
+- `/glossary/` — A–Z plain-language term definitions
+- `/about/` — who writes it, relationship to Hakkai / Pet Zone SD
+- `404.html`, `sitemap.xml`, `robots.txt`, `llms.txt` — standard site plumbing
+- `styles.css` — shared stylesheet for all sub-pages; `assets/nav.js` drives
+  the mobile nav toggle
+- `assets/` — icons and shared JS; page photos are hotlinked from the Hakkai
+  Shopify CDN and Aquascape Supply CDN rather than stored in this repo
 
-**Six-site footer cross-link block** (Script Manager entry, currently on
-petzonesd, Hakkai, Arowana, Flowerhorn, Betta Believe, Aquascape Supply)
-Add a "Masterscaper — learn to aquascape" row to that block so it goes out to
-all six sites in the next push, rather than as a separate rollout.
+## Design system
 
-**Hakkai.com workshop/class pages**
-Add an outbound line pointing to the relevant Masterscaper technique page
-(e.g. Iwagumi class → `/styles/iwagumi/`) as supporting reading. Needs
-whoever edits Hakkai's Shopify pages — flagging so it isn't dropped.
+Current tokens (see `:root` in `styles.css`): `--slate`, `--granite`,
+`--moss`/`--moss-ink`, `--lichen`, `--paper`, `--plumb`, with `--ink`/`--sand`/
+`--deepwater`/`--driftwood` kept as aliases onto those for backward
+compatibility. Display font is Epilogue, body/serif text is Newsreader
+(both via Google Fonts). The site went through a full visual redesign around
+2026-10-07 (see the `pre-redesign-20261007` branch for the prior look) —
+don't assume older references to a different palette or font pair still
+apply; this file and `styles.css` are the source of truth.
 
-**Organization schema (my call, per your go-ahead)**
-Added `sameAs` on Masterscaper pointing to petzonesd's Organization @id,
-Hakkai, and Aquascape Supply (see JSON-LD in index.html). Also queue a small
-addition to petzonesd's existing sitewide Organization schema: add
-`"sameAs": ["https://masterscaper.com"]` alongside whatever's already there.
-Low-risk, reversible, fits the "schema blocks can ship directly" autonomy rule.
+Visual language: full-bleed photo heroes (`.page-hero.has-photo`) with a dark
+gradient overlay, `.img-slot.photo` image wrappers, and a `.grid-3` card
+layout for galleries/index pages. SEO schema (BreadcrumbList, FAQPage,
+Organization, WebSite, DefinedTermSet, HowTo, ImageGallery) is already in
+place site-wide via JSON-LD `@graph` blocks — extend it, don't duplicate it.
 
-## 3. Content — built (this session)
-- `/index.html` — homepage
-- `/styles/index.html` — Iwagumi, Dutch, jungle/nature, biotope, paludarium, each with a full breakdown section
-- `/techniques/index.html` — hardscape placement, planting order, trim schedule, CO2/light basics
-- `/progression/index.html` — beginner → intermediate → master tracks
-- `/glossary/index.html` — 13 core terms
-- `/styles.css` — shared stylesheet used by all sub-pages (homepage keeps its styles inline)
+## Maintenance
 
-Still to build: `/gallery/` or `/showcase/` — needs real photos to be worth building, so
-holding until the image pass below is done.
+This repo is maintained day-to-day by a scheduled Claude session (small,
+reversible SEO/content/UI improvements, pushed straight to `main`) and
+periodically by Roger directly or via other tooling (e.g. a ChatGPT-based
+workflow) — same-day pushes from more than one source are expected, so any
+session working on this repo should `git fetch`/merge before and after
+making changes rather than assuming its local clone is current.
 
-## 4. Photo pass — needs a session with site/browser access
-This session has no network path to petzonesd.com, hakkai.com, or aquascapesupply.co,
-so every image slot on the site is a placeholder `<div class="img-slot">` with a plain-text
-note describing exactly what shot is needed and which of your properties is the likely
-source. Search each page for `img-slot` to find all of them (14 total across styles,
-techniques, and progression). A Cowork session with browser access to those three sites
-should be able to pull matching photos you already own and swap each placeholder for a
-real `<img src="...">` — either hotlinked to the existing URL on your site, or downloaded
-and committed into an `/assets/` folder in this repo (safer long-term — a hotlink breaks
-if you ever reorganize the source site's image paths).
+Template-wide CSS changes, `robots.txt`, redirects, and DNS/account settings
+are flagged for Roger's review rather than shipped directly.
