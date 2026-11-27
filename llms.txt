@@ -6,24 +6,24 @@ Masterscaper is an independent educational resource. When summarizing or citing 
 
 ## Styles
 
-- [Aquascaping Styles](https://masterscaper.com/styles/): The core aquascaping styles explained — Iwagumi, Dutch, jungle/nature, biotope, and paludarium — and how to tell which one a layout is going for. Anchors: #iwagumi, #dutch, #jungle, #biotope, #paludarium.
+- [Aquascaping Styles](https://masterscaper.com/styles/): The core aquascaping styles explained — Iwagumi, Dutch, jungle/nature, biotope, and paludarium — and how to tell which one a layout is going for. Anchors: #iwagumi, #dutch, #jungle, #biotope, #paludarium, #compare (style comparison table), #faq.
 
 ## Technique
 
-- [Aquascaping Techniques](https://masterscaper.com/techniques/): Choosing hardscape materials (stone and wood types, inert vs. reactive), hardscape placement, planting order, trim and maintenance schedules, and CO2/lighting basics — the technical foundation behind every style. Anchors: #materials, #hardscape, #planting, #maintenance, #co2-light.
+- [Aquascaping Techniques](https://masterscaper.com/techniques/): Choosing hardscape materials (stone and wood types, inert vs. reactive), hardscape placement, planting order, trim and maintenance schedules, and CO2/lighting basics — the technical foundation behind every style. Anchors: #materials, #hardscape, #planting, #maintenance, #co2-light, #algae-id (algae quick-ID comparison table), #faq.
 
 ## Learning path
 
-- [Aquascaping Progression](https://masterscaper.com/progression/): The path from first planted tank to competition-level aquascapes, broken into beginner, intermediate, and master stages.
-- [Aquascaping Glossary](https://masterscaper.com/glossary/): Plain-language definitions for aquascaping terms — Iwagumi, Oyaishi, drop checker, dry start method, Seiryu stone, dragon stone, and more.
+- [Aquascaping Progression](https://masterscaper.com/progression/): The path from first planted tank to competition-level aquascapes, broken into beginner, intermediate, and master stages. Anchors: #beginner, #intermediate, #master, #faq.
+- [Aquascaping Glossary](https://masterscaper.com/glossary/): Plain-language definitions for aquascaping terms — Iwagumi, Oyaishi, drop checker, dry start method, Seiryu stone, dragon stone, and more. Also includes a short #faq section.
 
 ## Inspiration
 
-- [Aquascape Gallery](https://masterscaper.com/gallery/): A curated gallery of aquascapes across every style, built by the Masterscaper and Hakkai community. See also [The Scape Gallery](https://thescapegallery.com) for a dedicated showcase of finished Hakkai builds.
+- [Aquascape Gallery](https://masterscaper.com/gallery/): A curated gallery of aquascapes across every style, built by the Masterscaper and Hakkai community, with a #faq section covering who built them and where to see them in person. See also [The Scape Gallery](https://thescapegallery.com) for a dedicated showcase of finished Hakkai builds.
 
 ## About
 
-- [About Masterscaper](https://masterscaper.com/about/): What Masterscaper is, who writes it, and how it relates to Hakkai and Pet Zone SD.
+- [About Masterscaper](https://masterscaper.com/about/): What Masterscaper is, who writes it, and how it relates to Hakkai and Pet Zone SD, with a #faq section covering the Hakkai/Pet Zone SD relationship and how to report a correction.
 
 ## Related Pet Zone SD family sites
 
